@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zackary McFarlin — Portfolio</title>
+  <meta name="description" content="Videographer & video editor portfolio for Zackary McFarlin. Sports, docu-style vlogs, brand content." />
+  <meta property="og:title" content="Zackary McFarlin — Portfolio" />
+  <meta property="og:description" content="Videographer & video editor. Sports, documentaries, brand content." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f1a; --card:#111827; --muted:#94a3b8; --text:#e5e7eb; --acc:#38bdf8; --ring:#1f2937;
+      --radius:16px; --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; color:var(--text); background:radial-gradient(1200px 600px at 50% -10%, #0b1225, var(--bg));}
+    a{color:var(--acc); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px; margin:auto; padding:24px}
+    header{display:flex; align-items:center; justify-content:space-between; gap:12px; padding:18px 0}
+    .brand{display:flex; align-items:center; gap:14px}
+    .pfp{width:56px; height:56px; border-radius:50%; background:#0b1225; border:1px solid #20293a; box-shadow:var(--shadow); background-image:url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400'); background-size:cover; background-position:center}
+    h1{font-size:1.25rem; margin:0}
+    .tag{display:inline-flex; align-items:center; gap:8px; font-size:.9rem; color:var(--muted)}
+    nav{display:flex; gap:14px; flex-wrap:wrap}
+    nav a{padding:10px 14px; border:1px solid #213044; border-radius:999px; background:#0b1225}
+    .hero{margin:22px 0 28px; padding:28px; border:1px solid #213044; border-radius:var(--radius); background:linear-gradient(180deg, rgba(34,47,74,.35), rgba(17,24,39,.8)); box-shadow:var(--shadow)}
+    .hero h2{margin:0 0 12px; font-size:2rem}
+    .hero p{margin:6px 0 0; color:var(--muted); max-width:70ch}
+    .grid{display:grid; grid-template-columns:repeat(12,1fr); gap:18px}
+    .card{background:linear-gradient(180deg, #0c1324, #0b0f1a); border:1px solid #213044; border-radius:var(--radius); box-shadow:var(--shadow)}
+    .card:hover{transform:translateY(-2px); transition:.2s}
+    .thumb{position:relative; aspect-ratio:16/9; border-bottom:1px solid #213044; overflow:hidden; border-top-left-radius:var(--radius); border-top-right-radius:var(--radius)}
+    .thumb iframe, .thumb img{width:100%; height:100%; display:block}
+    .content{padding:16px}
+    .content h3{margin:0 0 6px; font-size:1.05rem}
+    .meta{color:var(--muted); font-size:.9rem}
+    .col-6{grid-column:span 6}
+    .col-4{grid-column:span 4}
+    .col-12{grid-column:span 12}
+    .section{margin:40px 0}
+    .section h2{margin:0 0 12px}
+    .list{display:grid; gap:10px}
+    .cta{display:flex; gap:14px; flex-wrap:wrap; margin-top:12px}
+    .btn{display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border-radius:12px; border:1px solid #2a3a55; background:#0b1225; color:var(--text)}
+    footer{margin:40px 0 10px; color:var(--muted); display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap}
+    @media (max-width:880px){ .col-6{grid-column:span 12} .col-4{grid-column:span 12} header{flex-direction:column; align-items:flex-start} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="pfp" aria-hidden="true"></div>
+        <div>
+          <h1>Zackary McFarlin</h1>
+          <div class="tag">Videographer • Video Editor • Docu-style & Sports</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <section class="hero">
+      <h2>Sports + Story. Clean edits. Real moments.</h2>
+      <p>
+        I film and edit action-driven stories—from D1 athletics coverage and prestige HS games to brand content and cinematic diary vlogs. Recent work includes on‑field coverage with Cover3 Athletics (sidelines access) and pieces featuring 5‑star RB <strong>Kemon Spell</strong>.
+      </p>
+      <div class="cta">
+        <a class="btn" href="#contact">Book a project</a>
+        <a class="btn" href="https://www.youtube.com" target="_blank" rel="noopener">Watch on YouTube</a>
+      </div>
+    </section>
+    <section id="work" class="section">
+      <h2>Selected Work</h2>
+      <div class="grid">
+        <article class="card col-6">
+          <div class="thumb">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Feature Reel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="content">
+            <h3>Friday Night Lights — Game Recap</h3>
+            <div class="meta">Sideline coverage • 4K edit • Turnaround: 24h</div>
+          </div>
+        </article>
+        <article class="card col-6">
+          <div class="thumb">
+            <iframe src="https://player.vimeo.com/video/76979871?h=8272103f6e" title="Docu Short" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="content">
+            <h3>Beyond the Wheel — Mini Doc</h3>
+            <div class="meta">Docu-style short • Interviews • Natural sound design</div>
+          </div>
+        </article>
+        <a class="card col-4" href="https://www.youtube.com/" target="_blank" rel="noopener">
+          <div class="thumb"><img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9bf?q=80&w=1200" alt="Project thumbnail"/></div>
+          <div class="content"><h3>HS Football Hype</h3><div class="meta">30s social cut • SFX hits</div></div>
+        </a>
+        <a class="card col-4" href="https://www.youtube.com/" target="_blank" rel="noopener">
+          <div class="thumb"><img src="https://images.unsplash.com/photo-1455641374154-422f32c26e42?q=80&w=1200" alt="Project thumbnail"/></div>
+          <div class="content"><h3>Brand Spot — Catalog25</h3><div class="meta">UGC style • Product focus</div></div>
+        </a>
+        <a class="card col-4" href="https://www.youtube.com/" target="_blank" rel="noopener">
+          <div class="thumb"><img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=1200" alt="Project thumbnail"/></div>
+          <div class="content"><h3>Cinematic Diary</h3><div class="meta">Fujifilm X100IV • 4K60</div></div>
+        </a>
+      </div>
+    </section>
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="grid">
+        <div class="col-6">
+          <div class="card"><div class="content">
+            <p>
+              I’m a videographer/editor based in Florida & Pennsylvania, available for travel. I love fast action, clean composition, and edits that serve the story. Fully insured; comfortable shooting on sidelines and coordinating quick turnarounds for social.
+            </p>
+            <ul class="list">
+              <li><strong>Gear:</strong> Fujifilm X100IV, Sony FX30, DJI mics</li>
+              <li><strong>Strengths:</strong> sports coverage, docu interviews, pace & rhythm, color consistency</li>
+              <li><strong>Clients:</strong> Cover3 Athletics, Catalog25, local brands</li>
+            </ul>
+          </div></div>
+        </div>
+        <div class="col-6">
+          <div class="card"><div class="content">
+            <h3>Testimonials</h3>
+            <p class="meta">“Locked in on the sidelines. Footage and turnaround were clutch.” — Cover3 Athletics</p>
+            <p class="meta">“Understands product + story. Edits that actually convert.” — Catalog25</p>
+          </div></div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="section">
+      <h2>Services & Rates</h2>
+      <div class="grid">
+        <div class="col-4"><div class="card"><div class="content">
+          <h3>Event Coverage</h3>
+          <p class="meta">Sidelines, tournaments, showcases</p>
+          <ul class="list">
+            <li>Half‑day (up to 4h)</li>
+            <li>Delivery: highlight + raw selects</li>
+          </ul>
+        </div></div></div>
+        <div class="col-4"><div class="card"><div class="content">
+          <h3>Editing Packages</h3>
+          <p class="meta">Short‑form, reels, recap cuts</p>
+          <ul class="list">
+            <li>2–3 revisions included</li>
+            <li>Subtitles & basic motion GFX</li>
+          </ul>
+        </div></div></div>
+        <div class="col-4"><div class="card"><div class="content">
+          <h3>Docu Shorts</h3>
+          <p class="meta">Interviews + b‑roll + story</p>
+          <ul class="list">
+            <li>Treatment & shotlist support</li>
+            <li>Sound design & color pass</li>
+          </ul>
+        </div></div></div>
+      </div>
+      <p style="color:var(--muted); margin-top:10px">Ask for student/non‑profit rates. Travel available.</p>
+    </section>
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="grid">
+        <div class="col-12">
+          <div class="card"><div class="content">
+            <p>Email: <a href="mailto:zackary@example.com">zackary@example.com</a> • Instagram: <a href="https://instagram.com" target="_blank" rel="noopener">@yourhandle</a> • TikTok: <a href="https://tiktok.com" target="_blank" rel="noopener">@yourhandle</a></p>
+            <form name="contact" onsubmit="event.preventDefault(); alert('Thanks! I\'ll be in touch.');">
+              <div class="grid" style="gap:12px; margin-top:8px">
+                <input aria-label="Name" placeholder="Name" required style="grid-column:span 6; padding:12px; border-radius:12px; background:#0b1225; border:1px solid #213044; color:var(--text)">
+                <input aria-label="Email" placeholder="Email" type="email" required style="grid-column:span 6; padding:12px; border-radius:12px; background:#0b1225; border:1px solid #213044; color:var(--text)">
+                <textarea aria-label="Message" placeholder="Project details" rows="4" required style="grid-column:span 12; padding:12px; border-radius:12px; background:#0b1225; border:1px solid #213044; color:var(--text)"></textarea>
+                <button class="btn" type="submit">Send</button>
+              </div>
+            </form>
+          </div></div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>© <span id="year"></span> Zackary McFarlin</div>
+      <div class="meta">Built as a single HTML file. Host free on GitHub Pages/Netlify.</div>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
